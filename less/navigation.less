@@ -4,33 +4,32 @@
   display: flex;
   width: 75%;
   margin: 1%;
-  border-bottom: 2px dashed @navigation-border;;
-  margin-left:15%;
-  @media @mobile{
-
-}
-  
-
-  .logo {
-    width: 48%;
-    margin: 1%;
-    font-size: 50px;
-    
+  border-bottom: 2px dashed @navigation-border;
+  margin-left: 15%;
+  @media @mobile {
+    flex-direction: column;
+    align-items:center;
   }
-  .nav {
-    display:flex;
-    width: 48%;
-    margin: 1%;
-    justify-content:space-around;
-    @media @mobile{
-      border:@border;
-    }
-  
-  
+}
+
+.logo {
+  width: 48%;
+  margin: 1%;
+  font-size: 50px;
+}
+.nav {
+  display: flex;
+  width: 48%;
+  margin: 1%;
+  justify-content: space-around;
+  @media @mobile {
+    jusitify-content: space-evenly;
+    width: 100%;
+  }
+
   a {
     text-decoration: none;
     font-size: 20px;
-    color:@shark;
+    color: @shark;
   }
-}
 }
