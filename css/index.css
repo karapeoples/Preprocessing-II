@@ -182,9 +182,27 @@ img {
   }
 }
 .logo {
-  width: 48%;
+  display: flex;
+  width: 50%;
   margin: 1%;
-  font-size: 50px;
+  font-size: 30px;
+}
+.animate {
+  width: 25%;
+}
+.animate i {
+  margin: 1%;
+  animation: slidein 0.5s linear 3s infinite alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .nav {
   display: flex;
@@ -234,6 +252,19 @@ img {
 .home .intro {
   width: 75%;
   margin-left: 15%;
+}
+.home .intro i {
+  animation: slidein 0.5s linear 3s infinite alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .home .intro p {
   border-bottom: 2px dashed #C0C0C0;
