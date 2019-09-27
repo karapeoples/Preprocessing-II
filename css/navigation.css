@@ -1,8 +1,9 @@
 .navBar {
   display: flex;
-  width: 98%;
+  width: 75%;
   margin: 1%;
-  border-bottom: 1px dashed grey;
+  border-bottom: 3px dashed grey;
+  margin-left: 15%;
 }
 .navBar .logo {
   width: 48%;

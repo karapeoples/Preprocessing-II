@@ -170,9 +170,10 @@ img {
 }
 .navBar {
   display: flex;
-  width: 98%;
+  width: 75%;
   margin: 1%;
-  border-bottom: 1px dashed grey;
+  border-bottom: 2px dashed #C0C0C0;
+  margin-left: 15%;
 }
 .navBar .logo {
   width: 48%;
@@ -185,12 +186,19 @@ img {
   margin: 1%;
   justify-content: space-around;
 }
+@media "max-width: 500px" {
+  .navBar .nav {
+    border: 2px solid red;
+  }
+}
 .navBar .nav a {
   text-decoration: none;
   font-size: 20px;
+  color: #212529;
 }
 .footer {
-  width: 100%;
+  width: 75%;
+  margin-left: 15%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
@@ -200,11 +208,30 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  max-width: 100%;
+}
+.home .funBus {
+  width: 75%;
+  margin-left: 15%;
+}
+.home .funBus img {
+  width: 100%;
+}
+.home .intro {
+  width: 75%;
+  margin-left: 15%;
+}
+.home .intro p {
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 75%;
+  margin-left: 15%;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -230,13 +257,16 @@ img {
   padding-left: 0;
 }
 .home .content-destination {
-  width: 75%;
+  width: 50%;
   margin: 0 auto 30px;
+  margin-left: 25%;
 }
 .home .content-destination img {
   border-radius: 10px;
 }
 .home .content-pick {
+  width: 75%;
+  margin-left: 15%;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
@@ -245,4 +275,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  display: block;
+  background: #17A2B8;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 33%;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 3px groove teal;
+  color: #FFEBCD;
 }
