@@ -16,7 +16,7 @@
     p {
       border-bottom: 2px dashed @navigation-border;
     }
-  }
+  
 
   .content-section {
     margin: 30px 0;
@@ -92,22 +92,51 @@
     justify-content: space-between;
     @media @mobile {
       flex-direction:column;
-    }
-     
+    
+     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       @media @mobile{
         width:100%;
-      }
-     
+      
+     }
     }
     .btn {
-      .button();
-      
+      .button(); 
+      }
     }
   
+    
+    #form1{
+      margin-left:23%;
+      @media @mobile{
+        margin-left:2%;
+      }
+      }
+      input[type=text]{
+        width:75%;
+        @media @mobile{
+          width:95%;
+        }
+        
+      }
+      input[name=instruct]{
+        padding-top:25%;
+      }
+      .form-btn{
+       width:25%; 
+       margin-left:42%;
+
+       @media @mobile{
+         width: 95%;
+         margin: 1%;
+       }
+      }
+    input[type=submit]{
+      .button();
+    }
 
 // home
-  }
+}
