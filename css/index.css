@@ -197,7 +197,7 @@ img {
 .animate {
   width: 25%;
 }
-.animate i {
+i {
   margin: 1%;
   animation: slidein 0.5s linear 5s infinite alternate;
 }
