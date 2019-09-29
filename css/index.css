@@ -383,6 +383,11 @@ img {
     width: 95%;
   }
 }
+@media (max-width: 500px) {
+  .home .instruct {
+    width: 95%;
+  }
+}
 .home .form-btn {
   width: 25%;
   margin-left: 42%;
