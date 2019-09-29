@@ -197,14 +197,14 @@ img {
 .animate {
   width: 25%;
 }
-i {
+.roll {
   margin: 1%;
   animation: slidein 0.5s linear 5s infinite alternate;
 }
 @keyframes slidein {
   from {
-    margin-left: 300%;
-    width: 300%;
+    margin-left: 225%;
+    width: 225%;
   }
   to {
     margin-left: 0%;
