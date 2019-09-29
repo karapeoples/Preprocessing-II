@@ -198,6 +198,7 @@ img {
   width: 25%;
 }
 .roll {
+  border-radius: 10px;
   margin: 1%;
   animation: slidein 0.5s linear 5s infinite alternate;
 }
@@ -381,9 +382,6 @@ img {
   .home input[type=text] {
     width: 95%;
   }
-}
-.home input[name=instruct] {
-  padding-top: 25%;
 }
 .home .form-btn {
   width: 25%;
