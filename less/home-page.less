@@ -1,6 +1,5 @@
-.home {
-  max-width: 100%;
 
+.header{
   .funBus {
     width: 75%;
     margin-left: 15%;
@@ -16,34 +15,24 @@
     p {
       border-bottom: 2px dashed @navigation-border;
     }
-  
+  }
 
+  .home {
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 75%;
-    margin-left: 15%;
-    @media @mobile{
-      flex-direction:column;
-    }
-
+    
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media @mobile{
-      width:100%;
-    }
     }
     
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media @mobile{
-          width:100%;
-        }
 
       img {
         border-radius: 10px;
@@ -55,9 +44,6 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    @media @mobile{
-      flex-direction: column-reverse;
-    }
 
     .text-content {
       padding-left: 1%;
@@ -74,72 +60,100 @@
     width: 50%;
     margin: 0 auto 30px;
     margin-left: 25%;
-@media @mobile{
-      width:75%;
-      margin-left:15%
-    }
+     
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
-    width: 75%;
-    margin-left: 15%;
+    width: 98%;
+    margin-left: 1%;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    @media @mobile {
-      flex-direction:column;
+    
     
      }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media @mobile{
-        width:100%;
-      
-     }
     }
     .btn {
       .button(); 
       }
-    }
-  
+    
+    } // home
     
     #form1{
       margin-left:23%;
-      @media @mobile{
-        margin-left:2%;
       }
-      }
+
       input[type=text]{
         width:75%;
-        @media @mobile{
-          width:95%;
-        }
-        
+         
       }
-      .instruct{
-        @media @mobile{
-          width:95%;
-        }
-        
-      }
+      
       .form-btn{
-       width:25%; 
+       width:30%; 
        margin-left:42%;
-
-       @media @mobile{
-         width: 95%;
-         margin: 1%;
-       }
       }
     input[type=submit]{
       .button();
     }
 
 // home
+
+
+// *Mobile Version
+
+@media @mobile{
+.header{
+  .intro{
+    width:96%;
+    margin:2%;
+  }
 }
+  .home{
+  .content-section{
+    flex-direction:column;
+    .text-content{
+      width:96%;
+      margin: 2%;
+    }
+  .img-content{
+    width:100%;
+    img{
+      width:96%;
+      margin:2%;
+    }
+  }
+}
+  .inverse-content{
+    flex-direction:column-reverse;
+  }
+.content-destination{
+  width:98%;
+  margin:1%;
+  }    
+ .content-pick{
+   flex-direction:column;
+
+   .destination{
+width:98%;
+margin:1%;
+   }
+ }
+    
+  }//home
+  #form1{
+    margin-left: 1%;
+  }
+    .form-btn{
+      width:50%;
+      margin-left:20%;
+    }
+    
+} // media

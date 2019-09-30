@@ -6,51 +6,58 @@
   margin: 1%;
   border-bottom: 2px dashed @navigation-border;
   margin-left: 15%;
-  @media @mobile {
-    flex-direction: column;
-    align-items:center;
-  }
+  
 }
-
-
-
-.logo {
-  display:flex;
-  width: 50%;
-  margin: 1%;
-  font-size: 30px;
-  @media @mobile{
-    font-size:25px;
+  .logo {
     display:flex;
-    flex-direction:column-reverse;
+    width: 48%;
+    margin: 2%;
+    font-size: 30px;
   }
-}
 
-
-.animate{
-width:25%;
-}
-
-.roll{
-  border-radius:10px;
-  margin:1%;
-  .fun();
-}
-
-.nav {
-  display: flex;
-  width: 48%;
-  margin: 1%;
-  justify-content: space-around;
-  @media @mobile {
-    jusitify-content: space-evenly;
-    width: 100%;
+  .animate {
+    width: 25%;
   }
- 
+
+  .roll {
+    border-radius: 10px;
+    margin: 1%;
+    .fun();
+  }
+
+  .nav {
+    display:flex;
+    width: 48%;
+    margin: 1%;
+    justify-content: space-around;
+  }
 
   a {
     text-decoration: none;
     font-size: 20px;
     color: @shark;
   }
-}
+
+
+// *Mobile Version
+
+@media @mobile {
+  .navBar {
+    width: 96%;
+    margin:2%;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+        margin-left:10%;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+    .nav {
+        width: 100%;
+      }
+    }
+  
+
