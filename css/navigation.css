@@ -1,0 +1,22 @@
+.navBar {
+  display: flex;
+  width: 75%;
+  margin: 1%;
+  border-bottom: 3px dashed grey;
+  margin-left: 15%;
+}
+.navBar .logo {
+  width: 48%;
+  margin: 1%;
+  font-size: 50px;
+}
+.navBar .nav {
+  display: flex;
+  width: 48%;
+  margin: 1%;
+  justify-content: space-around;
+}
+.navBar .nav a {
+  text-decoration: none;
+  font-size: 20px;
+}
